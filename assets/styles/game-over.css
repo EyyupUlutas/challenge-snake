@@ -1,0 +1,55 @@
+ @font-face {
+     font-family: 'Joystix';
+     src: url('../fonts/joystix.ttf');
+     font-style: normal;
+     font-weight: 800;
+ }
+
+ body {
+     background-color: rgba(66, 70, 70, 1);
+ }
+
+ .center-screen {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     min-height: 100vh;
+ }
+
+ .snake-text {
+     font-family: "Joystix", sans-serif;
+     font-size: 70px;
+     color: white;
+ }
+
+ .score-text {
+     font-family: "Joystix", sans-serif;
+     font-size: 20px;
+     color: white;
+ }
+
+ .button {
+     font-family: "Joystix", sans-serif;
+     font-size: 18px;
+     color: rgba(66, 70, 70, 1);
+     padding: 20px;
+     margin: 20px;
+     background-color: rgba(251, 221, 142);
+     border-radius: 10px;
+ }
+
+
+ .center-block {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+
+ .title {
+     font-family: "Joystix", sans-serif;
+     font-size: 15px;
+     color: white;
+ }

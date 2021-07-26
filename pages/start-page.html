@@ -1,0 +1,87 @@
+<title>Challenge Snake</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link href="http://fonts.cdnfonts.com/css/joystix" rel="stylesheet" />
+<link href="../assets/styles/start-page.css" rel="stylesheet" type="text/css" />
+
+<html>
+<head>
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+</head>
+
+<body>
+  <audio id="click-sound" src="../assets/button-click.wav"></audio>
+  <audio id="start_music" src="../assets/start.mp3" loop="loop"></audio>
+  <div id="confirmAudioModal" class="w3-modal">
+    <div style="width: 50%;  border-radius: 10px;" class="w3-modal-content w3-animate-zoom w3-card-4">
+      <div class="w3-container">
+        <h4 id="dss">Bilgisayarın oyunun ses oynatmasına izin vermiyor. Bunu senin yapman gerek !</h4>
+      </div>
+      <footer class="w3-container">
+        <button onclick="startMusic()" class="button">IZIN VER</button>
+        <button onclick="setAudioConfirmModalVisibility(0)" style="background-color: red;" class="button">IPTAL</button>
+      </footer>
+    </div>
+  </div>
+  <div>
+    <!-- DEVELOPER SCREEN -->
+    <div id="developer-screen" class="center-screen">
+      <div class="dev-container">
+        <h3 style="font-size: 30px; padding-bottom: 20px; color: black" id="title" class="snake-text"> Sosyal Medya
+        </h3>
+        <p>
+          <img src="../assets/instagram.png" style="width: 20px; height: 20px" /> Instagram : <a target="_blank"
+            href="https://www.instagram.com/eyyupii/">@eyyupii</a>
+        </p>
+        <p>
+          <img src="../assets/github.png" style="width: 25px; height: 25px" /> Github : <a target="_blank"
+            href="https://github.com/EyyupUlutas">@EyyupUlutas</a>
+        </p>
+      </div>
+      <button style="margin-top: 60px" id="playgame" onclick="setDeveloperVisibility(0)" class="button"> GERI </button>
+    </div>
+  </div>
+  <!-- DEVELOPER SCREEN -->
+  <!-- HOW TO PLAY SCREEN -->
+  <div id="htp-screen" class="center-screen">
+    <h3 style="font-size: 30px; padding-bottom: 50px" id="title" class="snake-text"> Nasıl Oynanır </h3>
+    <div class="row center-block">
+      <div class="col-md-4">
+        <img class="challenge-container" src="../assets/wall.gif" alt="image" />
+        <p class="title">Duvara Çarpma !</p>
+        <p class="description"> Herhangi bir duvara çarptıgın anda oyun biter </p>
+      </div>
+      <div class="col-md-4">
+        <img class="challenge-container" src="../assets/toxicapple.gif" alt="image" />
+        <p class="title">Zehirli Elma !</p>
+        <p class="description">Kırmızı renkli elmayı yersen oyun biter</p>
+      </div>
+      <div class="col-md-4">
+        <img class="challenge-container" src="../assets/speed.gif" alt="image" />
+        <p class="title">Oyun Hızlandı !</p>
+        <p class="description"> Artık yılan daha hızlı haraket ediyor fakat duvara çarparsan oyun biter </p>
+      </div>
+      <div class="col-md-4">
+        <img class="challenge-container" src="../assets/mix.gif" alt="image" />
+        <p class="title">MIX !!</p>
+        <p class="description">Sol Tarafta Gördügün Bütün Özellikler Tek Görevde </p>
+      </div>
+    </div>
+    <button style="margin-top: 60px" id="playgame" onclick="setHtpVisibility(0)" class="button"> GERI </button>
+  </div>
+  <!-- HOW TO PLAY SCREEN -->
+
+  <!-- START SCREEN -->
+  <div id="start-screen" class="center-screen">
+    <div class="typewriter">
+      <h1 id="title" class="snake-text"> Challenge <br /> Snake </h1>
+    </div>
+    <button id="playgame" onclick="startGame()" class="button">OYUNA BASLA</button>
+    <button id="htpbutton" onclick="setHtpVisibility(1)" class="button"> NASIL OYNANIR </button>
+    <button onclick="setDeveloperVisibility(1)" id="developer" class="button"> YAZILIMCI </button>
+  </div>
+  <!-- START SCREEN -->
+  </div>
+</body>
+<script src="../assets/js/start-page.js"></script>
+
+</html>

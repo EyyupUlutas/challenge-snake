@@ -1,0 +1,232 @@
+#center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-family: 'DejaVu Sans Mono',
+        monospace,
+}
+
+canvas.danger {
+    border-style: solid;
+    display: block;
+    margin: 10px auto 0;
+    border-width: 0px;
+    box-shadow: 0px 0px 70px red;
+}
+
+
+@keyframes glowRed {
+    0% {
+        border-color: red;
+        box-shadow: 0px 0px 100px red;
+    }
+
+    100% {
+        border-color: red;
+        box-shadow: 0 0 20px rgba(255, 0, 0, .6), inset 0 0 10px rgba(255, 0, 0, .4);
+    }
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+
+
+body {
+    color: black;
+    background-color: #1a1919;
+    background-image: linear-gradient(45deg,
+            #1b1b1b 25%,
+            transparent 25%,
+            transparent 75%,
+            #1b1b1b 75%,
+            #1b1b1b),
+        linear-gradient(-45deg,
+            #1b1b1b 25%,
+            transparent 25%,
+            transparent 75%,
+            #1b1b1b 75%,
+            #1b1b1b);
+
+
+    background-size: 60px 60px;
+    background-position: 0 0;
+    animation: slide 10s infinite linear;
+    text-align: center;
+
+}
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -120px 60px;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+#border {
+    display: block;
+    margin: 10px auto 0;
+    width: 600;
+    height: 600;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+}
+
+.gradient-border-success {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+.gradient-border-success:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, lime, rgb(0, 64, 0));
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    -webkit-animation: animatedgradient 2s ease alternate infinite;
+    animation: animatedgradient 2s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.gradient-border-danger:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+
+    background: linear-gradient(60deg, #CA0B00, #8a0901, #704800, #F32013);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    -webkit-animation: animatedgradient 1s ease alternate infinite;
+    animation: animatedgradient 1s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.gradient-border-danger {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+
+@-webkit-keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
+
+.fade {
+    -webkit-animation: fade 1.5s;
+    animation: fade 1.5s;
+    -moz-animation: fade 1.5s;
+    -o-animation: fade 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1
+    }
+
+
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes fade {
+    0% {
+        opacity: 1
+    }
+
+
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1
+    }
+
+
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes fade {
+    0% {
+        opacity: 1
+    }
+
+
+
+    100% {
+        opacity: 0
+    }
+
+}

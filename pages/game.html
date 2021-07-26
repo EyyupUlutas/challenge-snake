@@ -1,0 +1,24 @@
+<link href="../assets/styles/game.css" rel="stylesheet" type="text/css" />
+<title>Challenge Snake</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="http://fonts.cdnfonts.com/css/joystix" rel="stylesheet">
+<head>
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+</head>
+<div id="center">
+  <div>
+    <p id="challenge" style="color: azure;">Sıradaki Görev İçin </b>
+    <p id="time" style="color: azure; font-size: 18px;">-- </b>
+  </div>
+
+  <audio id="background-music" loop>
+    <source src="../assets/background.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+  <audio id="eat-sound" src="../assets/eat.mp3"></audio>
+  <audio id="game-over-sound" src="../assets/game-over.wav"></audio>
+  <div class="gradient-border-success" id="border">
+    <canvas id="game" width="600" height="600"></canvas>
+  </div>
+</div>
+<script src="../assets/js/game.js"></script>
+</canvas>
